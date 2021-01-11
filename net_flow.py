@@ -3,8 +3,14 @@ import matplotlib.pyplot as plt
 from numpy import genfromtxt
 import numpy as np
 
+from collections import Counter
 import os
 np.set_printoptions(formatter={'float_kind':'{:.3f}'.format})
+
+def count_samples(samples_set):
+    # samples_set is a list type
+    samples_seqs = [node_id for samples in samples_set for node_id in samples]
+    return Counter(samples_seqs)
 
 class NetFlow:
     
