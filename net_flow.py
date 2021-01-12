@@ -9,7 +9,8 @@ np.set_printoptions(formatter={'float_kind':'{:.3f}'.format})
 
 def count_samples(samples_set):
     # samples_set is a list type
-    samples_seqs = [node_id for samples in samples_set for node_id in samples]
+    samples_seqs = [node_id for samples in samples_set 
+                    for node_id in samples]
     return Counter(samples_seqs)
 
 class NetFlow:
@@ -91,16 +92,18 @@ def insert_front(num, ls):
         ls should be a sorted list in ascending order 
     '''
     def insert_binary(ls=ls, idx=0):
+        if len(ls) == 1:
+            return idx if ls[0] > num else idx + 1
+        
         middle_idx = len(ls) // 2
-        if middle_idx == 0:
-            return idx
+
         left_part, right_part = ls[:middle_idx], ls[middle_idx:]
         if left_part[-1] > num:  
             return insert_binary(left_part, idx)
         idx += middle_idx
         return insert_binary(right_part, idx)
     
-    idx = insert_binary()
+    idx = insert_binary() if len(ls) > 0 else 0
     ls.insert(idx, num)
 
 if __name__ == '__main__':
