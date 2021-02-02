@@ -1,0 +1,119 @@
+{
+  "main": {
+    "id": "1e61db0f24b97ef9",
+    "type": "split",
+    "children": [
+      {
+        "id": "58326cb7fad607eb",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "性能指标.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82dc4c1b067253af",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d262fbb88df7079",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d40621dd510f178f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b8cdb1839507ee55",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "LCFS",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f621cdd12722cc95",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "36d09ec30deef283",
+    "type": "split",
+    "children": [
+      {
+        "id": "9508ca5081ab737b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b5ce8fe5ce99926",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "性能指标.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "67bebaa95c40d966",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "性能指标.md",
+    "调度策略.md",
+    "排队论.md",
+    "排队网络分类.md",
+    "强制流定律.md",
+    "随机过程.md",
+    "系统设计.md",
+    "瓶颈定律.md",
+    "仿真分析方法.md",
+    "单服务器网路.md"
+  ]
+}
