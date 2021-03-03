@@ -20,7 +20,7 @@ class NetFlow:
         if file_path:
             self.read(file_path)
         self.graph = None
-        self._set_transform_matrix()
+        self._set_transfer_matrix()
         
     def read(self, file_path):
         self._raw_data = genfromtxt(file_path, delimiter=',', dtype='int')
@@ -72,7 +72,7 @@ class NetFlow:
         nx.draw_networkx(self.graph, pos=pos)
         plt.show()
     
-    def _set_transform_matrix(self):
+    def _set_transfer_matrix(self):
         self._matrix = np.zeros((self.node_num, self.node_num))
         
         row_id, col_id = self._raw_data.T
